@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func predictPressed(_ sender: Any) {
-        
+        fetchTweets()
     }
     
     func fetchTweets(){
@@ -65,6 +65,7 @@ class ViewController: UIViewController {
                 }
             }
             updateUI(with: score)
+            print("---")
             
         } catch {
                 print("error with making prediction\(error)")
